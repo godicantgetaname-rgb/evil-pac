@@ -1,9 +1,0 @@
-"VertexlitGeneric"
-{
-	"$basetexture" "munch/balkan/mp_milsim_balkan_sf_spetsnaz_goggles_glass"
- 
-   $phong 1
-   $phongboost 8
-   $phongalbedotint    1
-
-}
