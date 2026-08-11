@@ -1,0 +1,60 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "DorkPorts\Fozer\Textures\atlas_elite_glow_col"
+
+	$additive 1
+
+	$envmap "env_cubemap"
+	$envmaptint "[0.01 0.02 0.02]"
+
+	$phong 1
+	$phongfresnelranges "[0.5 0.75 1]"
+	$phongtint "[0.06 0.06 0.06]"
+	$phongexponent 4
+	$phongboost 0.14
+
+	"$alpha" 1
+	"$sine" 1
+	"$sine2" 1
+	"$sine3" 1
+	
+	"Proxies"
+	{
+	"Sine"
+	{
+	"sineperiod" 5
+	"sinemin" 0
+	"sinemax" 1
+	"resultVar" $sine
+}
+
+	"Multiply"
+	{
+	"srcVar1" $sine
+	"srcVar2" $sine
+	"resultVar" $sine2
+}
+
+	"Multiply"
+	{
+	"srcVar1" $sine2
+	"srcVar2" $sine2
+	"resultVar" $sine3
+}	
+
+	"Multiply"
+	{
+	"srcVar1" $sine3
+	"srcVar2" $sine3
+	"resultVar" $alpha
+}	
+	"AnimatedTexture"
+	{
+	"animatedtexturevar" $basetexture
+	"animatedtextureframenumvar" $frame
+	"animatedtextureframerate" 20
+	
+}
+}
+}
+

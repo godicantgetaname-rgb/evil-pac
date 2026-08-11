@@ -1,0 +1,54 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "DorkPorts\Fozer\Textures\atlas_elite_headgear_col"        
+	"$color2" "[0.85 0.85 0.85]"
+	//"$blendTintByBaseAlpha"	"1"
+	//"$PhongDisableHalfLambert" "1"
+	//"$BaseMapAlphaPhongMask" "1"
+	"$PhongDisableHalfLambert" "1"
+	//"$phongtint" "[///RGB_VALUE///]"	
+
+	//TRANSPARENCY AND AO:
+
+	//"$additive" "1"
+	//"$translucent" "[///VALUE///]"
+	//"$alphatest" "1"
+	//"$alphatestreference" "[///VALUE///]"
+	//"$ambientocclusion" "0"
+
+	//SELFILLUMINATION:
+
+	//"$selfillumtint" "[2 2 2]"
+	//"$selfillum" "1"
+
+
+	//MISC:
+
+	//"$nocull" "1"	
+
+	//"$normalmapalphaenvmapmask" "1" 	
+	//"$envmap" "env_cubemap"					
+	//"$envmaptint" "[0.08 0.08 0.08]"				
+ 	//"$envmapFresnel"  "[1.0] "
+
+	$lightwarptexture "DorkPorts\Fozer\Textures\lightwarp_soft"
+	//"$phongwarptexture"		""
+	"$phongexponent" "1"	
+
+	//"$rimlight" "1"
+	//"$rimlightboost" "1"
+	//"$rimmask" "1"
+
+
+	"$phong" "1"						
+	"$phongboost"	".1" 		
+	//"$phongexponenttexture" ""  ///UV88, 0.8
+	"$phongfresnelranges"	"[0.015 0.1 0.5]"					
+	//"$PhongAlbedoTint" "1"
+	
+		$detail"DorkPorts\Fozer\Textures\atlas_elite_headgear_col_2"
+	$detailscale 1
+	$detailblendfactor "3"
+	$detailblendmode 5
+}
+
